@@ -3,11 +3,13 @@ basic.forever(function () {
         basic.showString("Hello!")
     } else {
         images.createBigImage(`
-            # # . # . . . . . .
+            . # . . # . . . . .
             # # . # . . . . . .
             . # # # . . . . . .
             . # . # . . . . . .
             . # . # . . . . . .
             `).scrollImage(1, 200)
+        basic.clearScreen()
+        basic.pause(100)
     }
 })
